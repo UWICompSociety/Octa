@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using UnityEngine.SocialPlatforms;
-using GooglePlayGames;
+//using UnityEngine.SocialPlatforms;
+//using GooglePlayGames;
 
 public class GameOver : MonoBehaviour {
 

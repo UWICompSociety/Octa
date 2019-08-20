@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using GooglePlayGames;
+//using GooglePlayGames;
 
 public class PlayGamesManager : MonoBehaviour{
 
@@ -9,7 +9,7 @@ public class PlayGamesManager : MonoBehaviour{
 	// Use this for initialization
 	void Start () {
 	
-		PlayGamesPlatform.Activate ();
+		//PlayGamesPlatform.Activate ();
 		if (startMenu.activeInHierarchy) {
 			Debug.Log("Signing in");
 			SignIn ();
@@ -81,9 +81,9 @@ public class PlayGamesManager : MonoBehaviour{
 	public void postScoreToLeaderboard(int score){
 
 			//if (signedin) {
-				Social.ReportScore (score, PlayGamesConstants.leaderboard_top_score, (bool success) => {
-				//handle success or failure
-				});
+				//Social.ReportScore (score, PlayGamesConstants.leaderboard_top_score, (bool success) => {
+				////handle success or failure
+				//});
 		//}
 
 
@@ -91,9 +91,9 @@ public class PlayGamesManager : MonoBehaviour{
 
 	public void recordAchievement(string achievement){
 			//if (signedin) {
-				Social.ReportProgress (achievement, 100.0f, (bool success) => {
-				// handle success or failure
-				});
+				//Social.ReportProgress (achievement, 100.0f, (bool success) => {
+				//// handle success or failure
+				//});
 			//}
 
 

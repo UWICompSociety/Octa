@@ -27,12 +27,13 @@ public class AudioManager : MonoBehaviour {
 	}
 
 	void Start(){
-		//audio.clip = lowTempoClip;
+		audio.clip = lowTempoClip;
+        startAudio();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		/*if (audioStarted) {
+		if (audioStarted) {
 
 			clipTimer+=Time.deltaTime;
 			if(clipTimer>=clipLength && !gameOver.gameOver && !pauseMenu.activeInHierarchy &&!clipPlaying){
@@ -44,7 +45,7 @@ public class AudioManager : MonoBehaviour {
 			}
 
 
-		}*/
+		}
 	}
 
 	public void startAudio(){
